@@ -17,9 +17,10 @@ function rse_mean(b)
 end
 
 function rse_std(c)
-    for i=c
+ #=    for i=c
         res = rse_sum(c) - rse_mean(c)
-    return res
+    end =#
+#    return res
 end
 
 sum = rse_sum(1:36)
@@ -29,9 +30,9 @@ mean = rse_mean(-15:17)
 std = rse_std(1:3)
 
 struct StatResult
-    x:vector
-    n:Integer
-    std:real
+    x::Vector
+    n::Integer
+    std::Float64
 end
 
 
